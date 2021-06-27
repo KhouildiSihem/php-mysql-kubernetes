@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-deployment
+  name: mysqli
   labels:
-    app: mysql
+    app: mysqli
 spec:
   selector:
     matchLabels:
-      app: mysql
+      app: mysqli
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: mysql
+        app: mysqli
     spec:
       volumes:
       - name: mysql-persistent-storage
