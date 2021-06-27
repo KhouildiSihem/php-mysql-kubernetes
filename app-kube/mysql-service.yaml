@@ -15,6 +15,5 @@ spec:
   selector:
     app: mysql
   type: NodePort   
-  clusterIP: None
   status: 
     loadbalancer: {}
