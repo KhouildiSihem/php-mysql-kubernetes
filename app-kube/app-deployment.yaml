@@ -25,10 +25,7 @@ spec:
           value: "3306"
         - name: MYSQL_DATABASE_NAME
           value: "testing"
-        - name: APP_DATABASE_USER
-          value: "user"
-        - name: APP_DATABASE_PASSWORD
-          value: "12345"
+      
         ports:
         - containerPort: 80
           name: app
