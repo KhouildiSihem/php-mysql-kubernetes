@@ -9,7 +9,6 @@ metadata:
 spec:
   ports:
   - port: 3306
-  protocol: TCP
   targetPort: 3306
   nodePort: 31016 
   selector:
