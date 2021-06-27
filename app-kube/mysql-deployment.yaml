@@ -21,8 +21,8 @@ spec:
         persistentVolumeClaim:
           claimName: mysql-pv-claim
       containers:
-      - image: mysql:5.7
-        name: mysql
+      - image: sihemkh/mysqldata:v1
+        name: mysqli
         env:
         - name: MYSQL_DATABASE
           value: "testing"
