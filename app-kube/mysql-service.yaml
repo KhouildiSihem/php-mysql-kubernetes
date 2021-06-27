@@ -5,9 +5,16 @@ metadata:
   name: mysqli
   labels:
     app: mysqli
+  name: mysql-ext  
 spec:
   ports:
   - port: 3306
+  protocol: TCP
+  targetPort: 3306
+  nodePort: 31016 
   selector:
     app: mysqli
+  type: NodePort   
   clusterIP: None
+  status: 
+    loadbalancer: {}
