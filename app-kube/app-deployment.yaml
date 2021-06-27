@@ -16,7 +16,7 @@ spec:
         app: app
     spec:
       containers:
-      - image: khouildisihem/app-pfe:v.34
+      - image: khouildisihem/app-pfe:v.39
         name: app
         env:
         - name: APP_DATABASE_HOST
