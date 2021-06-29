@@ -5,12 +5,13 @@ metadata:
   name: mysql
   labels:
     app: mysql
-  name: mysql-ext  
+  
 spec:
   ports:
   - port: 3306
-  targetPort: 3306
-  nodePort: 31016 
+  protocol: TCP
+  
+  
   selector:
     app: mysql
   type: NodePort   
